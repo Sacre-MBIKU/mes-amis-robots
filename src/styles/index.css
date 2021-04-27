@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "sega";
+  src: url("./sega-logo-font-cufonfonts-webfont\ \(1\)/SEGA.woff");
+}
+
+body {
+  background-image: url("../images/pexels-thisisengineering-3913025.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200vh;
+  height: auto;
+  overflow-x: hidden;
+}
+* {
+  padding: 0% 5px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#root > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "sega";
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.crad-robot {
+  width: auto;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #9eebcf;
+  margin: 30px;
+  transition: all 0.8s ease-in-out;
+}
+
+.crad-robot1 {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #9eebcf;
+  margin: 30px;
+  transition: all 0.8s ease-in-out;
+  z-index: 2000;
+  position: absolute;
+}
+
+.crad-robot:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: auto;
+  height: 200px;
+}
+
+.my-loader {
+  margin: 10%;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: rgb(248, 4, 4);
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: rgb(250, 1, 1);
+}
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.modal-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 220vh !important;
+  background-color: rgba(0, 0, 0, 0.644);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.modal-card > div {
+  position: absolute;
+  top: 8.5%;
+  border: black 1px solid;
+}
