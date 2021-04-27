@@ -1,8 +1,14 @@
 const Loader = () => {
   return (
-    <div className="my-loader">
-      <div className="lds-heart">
-        <div></div>
+    <div>
+      <div class="loader">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
       </div>
     </div>
   );
